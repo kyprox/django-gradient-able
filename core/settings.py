@@ -15,12 +15,12 @@ CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+#DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = False
 
 # load production server from .env
 ALLOWED_HOSTS = ['kyprox.herokuapp.com', '127.0.0.1', config('SERVER', default='kyprox.herokuapp.com')]
 
-#DEBUG = False
 #ALLOWED_HOSTS = ['127.0.0.1', 'kyprox.herokuapp.com']
 
 # Application definition
