@@ -20,8 +20,8 @@ SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
 # load production server from .env
 #ALLOWED_HOSTS = ['localhost', '127.0.0.1', config('SERVER', default='127.0.0.1')]
 
-DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'https://kyprox.herokuapp.com']
 
 # Application definition
 
