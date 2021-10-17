@@ -63,11 +63,11 @@ function floatchart() {
                 width: 2,
             },
             series: [{
-                data: [45, 35, 60, 50, 85, 70]
+                data: [30, 60, 90, 120, 150, 180]
             }],
             yaxis: {
-               min: 5,
-               max: 90,
+               min: 0,
+               max: 200,
            },
             tooltip: {
                 fixed: {
@@ -79,7 +79,7 @@ function floatchart() {
                 y: {
                     title: {
                         formatter: function(seriesName) {
-                            return 'Ticket '
+                            return 'Return '
                         }
                     }
                 },

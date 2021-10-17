@@ -1,0 +1,124 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Invest {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">Invest</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+								<li class="breadcrumb-item"><a href="#!">Invest</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ sample-page ] start -->
+				<div class="col-sm-12">
+					<div class="card">
+						<div class="alert alert-warning" role="alert">
+							<span class="pcoded-micon">
+                                <i class="feather icon-user-check"></i></span> $5 coupon for first deposit over $50. 
+						</div>
+						<div class="card-body">
+							<h5 class="mb-3">KyproX Fund</h5>
+							<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active text-uppercase" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Invest</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-uppercase" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">About</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<p class="mb-0">
+										To add funds and invest in KyproX Fund you must transfer the amount you wish to one of the addresses below.
+									</p>
+									<div class="card-body table-border-style">
+										<div class="table-responsive">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>Coin</th>
+														<th>Chain Type</th>
+														<th>Wallet Adrress</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><img src="/static/assets/images/btc.png" width="35" height="35"> Bitcoin</td>
+														<td>BTC</td>
+														<td>bc1qthend73zz3ddgpxj3gmg0xfh2x38ycz8tcy88j</td>
+													</tr>
+													<tr>
+														<td><img src="/static/assets/images/eth.png" width="25" height="35"> Ethereum</td>
+														<td>ERC20</td>
+														<td>0x0e678Df42Aa2f09a66d7d43295fa93D2a28A5325</td>
+													</tr>
+													<tr>
+														<td><img src="/static/assets/images/bnb.png" width="35" height="35"> BNB</td>
+														<td>BEP20</td>
+														<td>0x0e678Df42Aa2f09a66d7d43295fa93D2a28A5325</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<p class="mb-0">
+										1. Make sure the deposit is made to one of the addresses above using the correct cryptocurrency. Otherwise, your deposited funds will not be added to your available balance - nor will it be refunded.
+									</p>
+									<br />
+									<p class="mb-0">
+										2. Investments are processed each hour.
+									</p>
+								</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									<p class="mb-0">
+										KyproX Fund is a blockchain-based hedge fund that uses a combination of Artificial Intelligence, Algorithmic Trading and Hard-To-Find sources of returns in the Cryptocurrency Market.
+									</p>
+									<br />
+									<p class="mb-0">
+										We give you access to the investment opportunities that the 1% have been taking advantage of for years. Our blockchain-based mutual fund use a data science approach to enhance returns.
+									</p>
+                                    <br />
+                                    <div class="alert alert-primary" role="alert">
+                                        Asset Aloccation:
+                                        <li>60% Cryptocurrency</li>
+                                        <li>20% Venture Capital</li>
+                                        <li>10% Foreign Exchange</li>
+                                        <li>5% Equity Short Volatility</li>
+                                        <li>5% Fixed Income Carry</li>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [ sample-page ] end -->
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

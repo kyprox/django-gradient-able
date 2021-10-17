@@ -1,0 +1,88 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Staking {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">Staking</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+								<li class="breadcrumb-item"><a href="#!">Staking</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ sample-page ] start -->
+				<div class="col-sm-12">
+					<div class="card">
+						<div class="alert alert-warning" role="alert">
+							<span class="pcoded-micon">
+                                <i class="feather icon-user-check"></i></span> 100% APY 
+						</div>
+						<div class="card-body">
+							<h5 class="mb-3">KyproX Staking, dedicated to increasing user staking income</h5>
+							<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active text-uppercase" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Stake</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="alert alert-success" role="alert">
+										<h4 class="alert-heading">Start earning right now.</h4>
+										<p>KyproX Token allows you staking and earn a percentage-rate reward over time. This happens via a “staking pool” which you can think of as being similar to an interest-bearing savings account. 
+											The reason your crypto earns rewards while staked is because the KyproX puts it to work. KyproX Token staking use a “consensus mechanism” called Proof of Stake, which is the way they ensure that all transactions are verified and secured without a bank or payment processor in the middle.
+										</p>
+									</div>
+									<br />
+									<h3>
+										How to Stake KyproX?
+									</h3>
+									<p>
+										1. Buy KyproX Token directly through the PancakeSwap website.
+									</p>
+									<a href="https://pancakeswap.finance/swap?outputCurrency=0x1014dadcc948572b2358ea2634c8e75042aeb7e3" target="_blank" class="btn  btn-primary">Buy Now</a>
+									<br />
+									<br />
+									<p>
+										2. Hold your tokens for as long as possible, the more you hold the more you earn.
+									</p>
+									<p>
+										3. 5% of all traded volume is reflected to all holders for passive income.
+									</p>
+									<p>
+										4. 5% of all traded volume is added to a liquidity pool
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [ sample-page ] end -->
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

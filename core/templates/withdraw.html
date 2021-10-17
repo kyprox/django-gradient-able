@@ -1,0 +1,105 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Withdraw {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">Withdraw</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+								<li class="breadcrumb-item"><a href="#!">Withdraw</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ sample-page ] start -->
+				<div class="col-sm-12">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="mb-3">KyproX Fund</h5>
+							<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active text-uppercase" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Invest</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<p class="mb-0">
+										To withdraw your funds click on the button below, inform the amount and your BNB wallet address to transfer.
+									</p>
+									<div class="card-body table-border-style">
+										<div class="card-body btn-page">
+											<button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Withdraw</button>
+											<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">Withdraw</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+														</div>
+														<div class="modal-body">
+															<form>
+																<div class="form-group">
+																	<label for="recipient-name" class="col-form-label">Amount:</label>
+																	<input type="text" class="form-control" id="recipient-name">
+																</div>
+																<div class="form-group">
+																	<label for="message-text" class="col-form-label">Your BNB Wallet Address:</label>
+																	<textarea class="form-control" id="message-text"></textarea>
+																</div>
+															</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+															<button type="button" class="btn  btn-primary">Send message</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="mb-0">
+										1. Make sure the wallet number entered is correct, if the redemption amount is made to the address below the funds will not be refunded.
+									</p>
+									<br />
+									<p class="mb-0">
+										2. Withdraws are processed each day.
+									</p>
+									<br />
+									<p class="mb-0">
+										3. In case of doubts or any problems, please contact us via Telegram or by email.
+									</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [ sample-page ] end -->
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
