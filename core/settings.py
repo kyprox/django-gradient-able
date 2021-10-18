@@ -17,11 +17,11 @@ SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = config('DEBUG', default=False, cast=bool)
 DEBUG = False
+ALLOWED_HOSTS = ['kyprox.herokuapp.com']
 
 # load production server from .env
-ALLOWED_HOSTS = ['kyprox.herokuapp.com', '127.0.0.1', config('SERVER', default='kyprox.herokuapp.com')]
+#ALLOWED_HOSTS = ['kyprox.herokuapp.com', '127.0.0.1', config('SERVER', default='kyprox.herokuapp.com')]
 
-#ALLOWED_HOSTS = ['127.0.0.1', 'kyprox.herokuapp.com']
 
 # Application definition
 
@@ -72,12 +72,35 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': 'db.sqlite3',
+#    }
+#}
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'my_db',
+#        'USER': 'postgres',
+#        'PASSWORD': '93912757',
+#        'HOST': 'localhost',
+#        'PORT': '5432', 
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7b6buodqpteth',
+        'USER': 'dqcrzqfhquazol',
+        'PASSWORD': 'b0840ccd4c33a634b4b7697357d0a33e063d7e4213dd2598f2166fa89d7bb217',
+        'HOST': 'ec2-54-205-61-191.compute-1.amazonaws.com',
+        'PORT': '5432', 
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
